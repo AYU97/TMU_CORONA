@@ -17,7 +17,7 @@ const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 // Connecting to the database
-let dev_db_url = process.env.MONGODB_URI
+let dev_db_url = `mongodb+srv://temp:temp@cluster0.yu9nz.mongodb.net/tmu_corona?retryWrites=true&w=majority`
 mongoose.connect(dev_db_url, {
     useNewUrlParser: true,
     useUnifiedTopology: true
