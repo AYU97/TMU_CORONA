@@ -5,7 +5,7 @@ const router = express.Router();
 const user_controller = require('../controller/user.controller');
 
 // router.get('/:id', user_controller.user_details);
-router.get('/details', user_controller.user_details);
+router.post('/details', user_controller.user_details);
 
 router.get('/all', user_controller.findAll);
 

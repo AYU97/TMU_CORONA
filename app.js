@@ -1,7 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const dotenv = require('dotenv');
-dotenv.config();
+
 // create express app
 const app = express();
 
@@ -29,9 +28,6 @@ mongoose.connect(dev_db_url, {
 });
 
 // define a simple route
-app.get('/', (req, res) => {
-    res.json({"message": "Welcome to EasyNotes application. Take notes quickly. Organize and keep track of all your notes."});
-});
 
 app.use('/user', require('./routes/user.routes'))
 
