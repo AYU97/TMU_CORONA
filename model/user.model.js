@@ -15,6 +15,9 @@ let UserSchema = new Schema({
     blood_sugar: { type: String, required: false, max: 100 },
     life_support_machine: { type: String, required: false, max: 100 },
     overall_condition: { type: String, required: true, max: 100 },
+    updated_time: { type: String, required: false, max: 100 },
+    updated_date: { type: String, required: false, max: 100 },
+
 
 });
 
