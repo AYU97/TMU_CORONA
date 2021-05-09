@@ -11,7 +11,7 @@ let UserSchema = new Schema({
     oxygen_saturation: { type: String, required: true, max: 100 },
     bed: { type: String, required: false, max: 100 },
     blood_pressure: { type: String, required: false, max: 100 },
-    pulse: { type: String, required: true, max: 100 },
+    pulse: { type: String, required: false, max: 100 },
     blood_sugar: { type: String, required: false, max: 100 },
     life_support_machine: { type: String, required: false, max: 100 },
     overall_condition: { type: String, required: true, max: 100 },
